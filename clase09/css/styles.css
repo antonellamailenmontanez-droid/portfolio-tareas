@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f6f2;
+  font-family: "Arial", sans-serif;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a0a23;
+  color: #d4cfa3;
+}
+nav h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+nav ul li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #d4cfa3;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+nav ul li:hover a {
+  color: white;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+#herosection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+#herosection div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+#herosection div article {
+  width: 100%;
+  max-width: 350px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #0a0a23;
+  color: #d4cfa3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#herosection div article h4 {
+  font-size: 18px;
+  text-align: center;
+}
+#herosection div article:hover {
+  background-color: #d4cfa3;
+  color: #0a0a23;
+  transform: scale(1.08);
+}
+#herosection .btn {
+  background-color: #0a0a23;
+  color: #d4cfa3;
+  padding: 12px 25px;
+  width: fit-content;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: inherit;
+}
+#herosection .btn:hover {
+  background-color: #d4cfa3;
+  color: #0a0a23;
+  transform: scale(1.08);
+}
+
+.proyectos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.proyectos-container article {
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #0a0a23;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background-color: #0a0a23;
+  color: #d4cfa3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.proyectos-container article:hover {
+  background-color: #d4cfa3;
+  color: #0a0a23;
+  border: 1px solid #d4cfa3;
+  transform: scale(1.05);
+}
+
+#sobremisection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+#sobremisection p {
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#proyectosection {
+  text-align: center;
+}
+#proyectosection h2 {
+  margin-bottom: 30px;
+}
+
+#contactosection {
+  padding: 40px 20px;
+}
+#contactosection form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+#contactosection form input,
+#contactosection form textarea {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+}
+#contactosection form button {
+  background-color: #0a0a23;
+  color: #d4cfa3;
+  padding: 12px 25px;
+  width: fit-content;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: inherit;
+}
+#contactosection form button:hover {
+  background-color: #d4cfa3;
+  color: #0a0a23;
+  transform: scale(1.08);
+}
+
+footer {
+  background-color: #0a0a23;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  #herosection div {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyectos-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+  }
+  .proyectos-container article {
+    width: 30%;
+  }
+  #sobremisection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 20px;
+  }
+  #sobremisection div {
+    max-width: 500px;
+  }
+  #sobremisection h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  #sobremisection p {
+    line-height: 1.5;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
